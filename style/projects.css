@@ -17,13 +17,14 @@
 }
 
 .projects-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background: #fff;
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 30%;
 }
 
@@ -58,4 +59,13 @@
 .links {
     display: flex;
     justify-content: space-between;
+}
+
+.tag-sm {
+    font-size: 0.75rem;
+    background: #f0f2f5;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #555;
 }
