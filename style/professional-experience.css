@@ -8,17 +8,17 @@
     background: #fff;
     border-radius: 12px;
     border-left: 5px solid #ccc;
+
     padding: 2rem;
     margin-bottom: 2rem;
-    transition: transform 0.2s;
 }
 
 .professional-experience-card.featured {
-    border-left: 5px solid #007bff;
+    border-left: 6px solid #2c3e50;
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
 }
 
-.card-header {
+.professional-experience-card-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -27,23 +27,39 @@
     margin-bottom: 1.5rem;
 }
 
+.company {
+    display: block;
+    color: #007bff;
+    font-weight: 500;
+    margin-top: 0.2rem;
+}
+
+.date {
+    background: #f8f9fa;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #666;
+    border: 1px solid #eee;
+}
+
 .professional-experience-title {
     color: #222;
     font-size: 1.4rem;
     text-align: left;
 }
 
-.professional-experience-description {
-    border-top: 1px solid #f0f0f0;
-    margin-top: 1rem;
-    padding-top: 1rem;
+.professional-experience-description .main-content:only-child {
+    grid-column: span 2;
 }
 
 .tasks {
-    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    margin-left: 1.2rem;
+    list-style-type: disc;
 }
 
 .tags {
@@ -63,9 +79,30 @@
 }
 
 .experience-grid {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 1rem;
+
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
+}
+
+.gain {
+    background-color: #fdfdfd;
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+    border-top: 1px solid #f0f0f0;
+    font-style: italic;
+}
+
+.gain h4 {
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
